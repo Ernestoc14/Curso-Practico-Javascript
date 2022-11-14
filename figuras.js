@@ -89,3 +89,50 @@ function areaCirculo(radio){
 // console.log("El area del circulo es de "+ areaCirculo + "cm c");
 
 console.groupEnd();
+
+//Interaccion con HTML
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
+function alturaTriangulo(lado1, lado2, lado3){
+    if(lado1 == lado2 && lado1 != lado3){
+        //calcula
+        const alturaT = Math.sqrt(lado1**2 - lado3**2 / 4);
+        console.log(alturaT);
+        return alturaT;
+    }else if(lado1 == lado3 && lado1 !=lado2){
+        //calcula
+        //const altura = Math.sqrt(lado1**2 - lado2**2 / 4);
+        //return altura;
+    }else{
+        //alert('No es Isosceles');
+    }
+}
+
+//Interaccion con HTML
+function calcularAlturaTriangulo(){
+    const lado1 = document.getElementsByClassName("lado");
+    const value = lado1.value;
+
+    // const lado2 = document.getElementsByClassName("lado");
+    // const segundo = lado2.value;
+
+    // const lado3 = document.getElementById("base");
+    // const value3 = lado3.value3;
+
+    const altura = alturaTriangulo(value, value2, value3);
+    alert(value);
+}

@@ -10,3 +10,10 @@ Can Use => touch nombreArchivo.{extension, extension, extension}
 -Segundo Paso: Implementar las formulas en Javascript
 -Tercer Paso: Crear Funciones
 -Cuarto Paso: Integrar HTML con JS
+
+## Taller N2 de Descuentos
+
+-Primer Paso: Definir Formulas
+-Segundo Paso: Implementar formulas con JS
+-Tercer Paso: Crear Funciones
+-Cuarto Paso: Integrar JS con HTML

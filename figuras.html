@@ -7,10 +7,39 @@
     <title>Figuras Geometricas</title>
 </head>
 <body>
-    <h1>
-        Figuras Geometricas
-    </h1>
-    
+    <header>
+        <h1>
+            Figuras Geometricas
+        </h1>
+        <p>Este es el primer taller del Curso Practico de JS</p>
+    </header>
+    <section>
+        <h2>Calcula el area y perimetro de un cuadrado</h2>
+        <form action="">
+            <label for="">
+                Escribe cuanto mide cada lado del cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el area
+            </button>
+        </form>
+        <h2>Calcula la altura del triangulo Isosceles</h2>
+        <form action="">
+            <label for="">
+                Cuanto miden los lados del triangulo: 
+            </label>
+            <input class="lado" type="number">
+            <input class="lado" type="number">
+            <input id="base" type="number">
+            <button type="button" onclick="calcularAlturaTriangulo()">
+                Calcula altura de Triangulo
+            </button>
+        </form>
+    </section>
     <script src="./figuras.js"></script>
 </body>
 </html>
