@@ -17,3 +17,10 @@ Can Use => touch nombreArchivo.{extension, extension, extension}
 -Segundo Paso: Implementar formulas con JS
 -Tercer Paso: Crear Funciones
 -Cuarto Paso: Integrar JS con HTML
+
+## Taller N3 Promedio, Mediana y Moda
+
+-Primer Paso: Definir Formulas
+-Segundo Paso: Implementar formulas con JS
+-Tercer Paso: Crear Funciones
+-Cuarto Paso: Integrar JS con HTML
