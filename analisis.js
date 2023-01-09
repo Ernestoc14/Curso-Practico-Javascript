@@ -1,15 +1,4 @@
-const salariosPan = panama.map(
-    function (persona){
-        return persona.salary;
-    }
-);
-
-const salariosPanSorted = salariosPan.sort(
-    function (salaryA, salaryB){
-        return salaryA - salaryB;
-    }
-);
-
+//Helpers
 function esPar(number){
     // if(number % 2 == 0){
     //     return true;
@@ -30,6 +19,9 @@ function calcularMediaAritmerica(lista){
     return promedioLista;
 }
 
+//Calculadora de Medianas
+
+
 function medianaSalarios(lista){
     const mitad = parseInt(lista.length / 2);
 
@@ -45,6 +37,33 @@ function medianaSalarios(lista){
     }
 }
 
+//Mediana General
+const salariosPan = panama.map(
+    function (persona){
+        return persona.salary;
+    }
+);
+
+const salariosPanSorted = salariosPan.sort(
+    function (salaryA, salaryB){
+        return salaryA - salaryB;
+    }
+);
+
+const medianaGeneralPan = medianaSalarios(salariosPanSorted);
+
+//Mediana del Top 10%
+const spliceStart = (salariosPanSorted.length * (90)) / 100;
+const spliceCount = salariosPanSorted.length - spliceStart;
+
+const salariosPanTop10 = salariosPanSorted.splice(
+    spliceStart,
+    spliceCount
+);
+
+const medianaTop10Pan = medianaSalarios(salariosPanTop10);
+
 console.log(
-    medianaSalarios(salariosPanSorted)
+    medianaGeneralPan,
+    medianaTop10Pan,
 );
