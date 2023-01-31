@@ -18,10 +18,10 @@ header p{
 }
 
 .section-talleres{
-    background-color: aquamarine;
-    border-radius: 10px;
-    width: 625px;
-    height: 275px;
+    border: 2px solid bisque;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 629px;
+    height: 279px;
     position: relative;
     top: 25%;
     left: -55px;
@@ -30,6 +30,8 @@ header p{
 div{
     width: 125px;
     height: 55px;
+    background-color: gray;
+    border: 1px solid #222;
 }
 
 div a{
@@ -38,23 +40,24 @@ div a{
     margin-left: 25px;
     text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-taller1{
-    background-color: red;
     position: absolute;
     top: 0px;
     left: 0px;
 }
 .nav-taller2{
-    position: absolute  ;
-    background-color: blueviolet;
+    position: absolute;
     left: 0px;
     top: 55px;
     width: 250px;
 }
 .nav-taller3a{
-    background-color: tomato;
     position: absolute;
     left: 0px;
     top: 110px;
@@ -66,17 +69,15 @@ div a{
     left: 0px;
     top: 165px;
     width: 500px;
-    background-color: purple;
 }
 .nav-taller4{
-    background-color: darkkhaki;
     position: absolute;
     left: 0px;
     top: 220px;
     width: 625px;
 }
 
-.nav-taller1 :hover{
-    width: 650px;
-    background-color: whitesmoke ;
+div :hover{
+    font-size: 1.2rem;
+    
 }
